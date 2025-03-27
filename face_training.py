@@ -27,4 +27,4 @@ def getImagesAndLabels(path):
 faces,ids = getImagesAndLabels(path)
 recognizer.train(faces, np.array(ids))
 
-recognizer.write('trainer/trainer.yml') # recognizer.save() worked on Mac, but not on Pc
+recognizer.save('trainer/trainer.yml') # recognizer.save() worked on Mac, but not on Pc
